@@ -1,0 +1,15 @@
+{
+  "name": "algo-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "中文数据结构与算法可视化实验室",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "start": "node scripts/serve.mjs dist"
+  },
+  "engines": { "node": ">=22" }
+}
