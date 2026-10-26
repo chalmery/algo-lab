@@ -348,6 +348,4 @@ $('open-search').onclick = openSearch; $('search-input').oninput = searchResults
 $('search-input').onkeydown = e => { if (e.key === 'ArrowDown') { e.preventDefault(); $('search-results').querySelector('a')?.focus(); } if (e.key === 'Enter') $('search-results').querySelector('a')?.click(); };
 document.querySelectorAll('[data-close]').forEach(button => button.onclick = () => $(button.dataset.close).close());
 document.querySelectorAll('dialog').forEach(dialog => dialog.addEventListener('click', e => { if (e.target === dialog) { const r = dialog.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) dialog.close(); } }));
-function info(title, body) { stop(); $('info-title').textContent = title; $('info-body').innerHTML = body; $('info-dialog').showModal(); }
-$('about-button').onclick = () => info('关于算法工坊', '<p>让抽象的算法，变成可以观察、暂停和回看的过程。首版提供 8 个常用算法与数据结构，按基础结构、查找与索引、排序、图算法分类。</p><p>灵感来自 <a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html" target="_blank" rel="noopener noreferrer">David Galles 的数据结构可视化教学网站</a>。本项目的界面、可视化与算法代码独立实现，未复制原站源码或素材。</p><p><a href="https://github.com/chalmery/algo-lab" target="_blank" rel="noopener noreferrer">查看开源代码与部署说明 ↗</a></p>');
 loadAlgorithm(location.hash.slice(1) || 'quick');

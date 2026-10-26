@@ -22,7 +22,6 @@
     <button class="search-button" id="open-search"><span data-icon="search"></span><span>搜索算法</span><kbd>⌘ K</kbd></button>
     <div class="nav-label">探索算法 <span id="catalog-count">08</span></div>
     <nav id="algorithm-nav"></nav>
-    <a class="repo-side" href="https://github.com/chalmery/algo-lab" target="_blank" rel="noopener noreferrer"><span data-icon="github"></span> 开源在 GitHub <span aria-hidden="true">↗</span></a>
   </aside>
   <div class="nav-overlay" id="nav-overlay" hidden></div>
   <div class="page">
@@ -50,11 +49,9 @@
         </section>
         <aside class="inspector card" aria-label="步骤讲解与伪代码"><div class="inspector-tabs" role="tablist" aria-label="讲解面板"><button role="tab" id="tab-steps" aria-selected="true" aria-controls="panel-steps" tabindex="0">步骤讲解</button><button role="tab" id="tab-code" aria-selected="false" aria-controls="panel-code" tabindex="-1">伪代码</button></div><div id="panel-steps" role="tabpanel" aria-labelledby="tab-steps"><div class="step-explanation"><span class="explanation-label"><i></i> 当前步骤</span><h3 id="step-title">准备开始</h3><p id="step-message"></p></div><div class="variable-section"><h3>状态观察 <span data-icon="scan"></span></h3><dl id="variables"></dl></div><div class="history-section"><h3>执行记录 <span id="history-count"></span></h3><ol id="history"></ol></div></div><div id="panel-code" role="tabpanel" aria-labelledby="tab-code" hidden><p class="code-caption">同步高亮当前步骤</p><div id="code-lines" class="code-lines"></div></div><div class="keyboard-hint"><kbd>空格</kbd> 播放 / 暂停 <span>·</span> <kbd>←</kbd><kbd>→</kbd> 单步</div></aside>
       </div>
-      <footer><button class="text-button" id="about-button">关于项目 <span aria-hidden="true">↗</span></button></footer>
     </main>
   </div>
   <dialog id="search-dialog" class="search-dialog"><div class="dialog-heading"><h2>探索算法</h2><button class="icon-button" data-close="search-dialog" aria-label="关闭搜索"><span data-icon="close"></span></button></div><div class="dialog-search"><span data-icon="search"></span><input id="search-input" placeholder="搜索算法、分类或关键词…" aria-label="搜索算法" autocomplete="off"></div><div id="search-results"></div></dialog>
-  <dialog id="info-dialog" class="info-dialog"><div class="dialog-heading"><h2 id="info-title"></h2><button class="icon-button" data-close="info-dialog" aria-label="关闭"><span data-icon="close"></span></button></div><div id="info-body" class="info-body"></div></dialog>
   <div class="toast" id="toast" role="status" hidden></div>
 </body>
 </html>
